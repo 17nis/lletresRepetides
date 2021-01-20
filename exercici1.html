@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lletres repetides</title>
+</head>
+<body>
+    <script>
+        // Exercici 1
+        console.log("%c---EXERCICI 1---","color:orange")
+
+        let arrNom = ["G","E","N","I","S","8"];
+        for(lletra of arrNom){console.log(lletra)};
+
+        // Exercici 2
+        console.log("%c---EXERCICI 2---","color:orange")
+
+        let vocals = ["A","E","I","O","U"]; 
+        for(lletra of arrNom){
+            if(vocals.includes(lletra)){
+                console.log("Ha trobat la VOCAL: " + lletra);
+            }else if(!isNaN(lletra)){
+                console.log("Els noms de persones no contenen el número: " + lletra)
+            }else{console.log("Ha trobat la CONSONANT: " + lletra)};
+        };
+
+        // Exercici 3
+        console.log("%c---EXERCICI 3---","color:orange")
+
+        arrNom = ["G","E","N","I","S","I"];
+        console.log(arrNom);
+
+        var map = new Map();
+        let contador;
+
+        for(lletra of arrNom.sort()){
+            if(map.has(lletra)){
+                contador = map.get(lletra,)
+                map.set(lletra,contador +1)    
+            }else{map.set(lletra, 1)}
+        }
+        
+        console.log(map);
+
+
+
+    </script>
+</body>
+</html>
